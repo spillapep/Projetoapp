@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTintMode="screen"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Imagem Circular -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/notebook"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Corner.Full" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Calculadora de Média"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Descrição -->
+        <TextView
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Insira as notas do aluno:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Campos de nota -->
+
+        <EditText
+            android:id="@+id/nota1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nota 1"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/nota2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Nota 2"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/nota3EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Nota 3"
+            android:inputType="numberDecimal" />
+
+        <!-- Botão Calcular -->
+        <Button
+            android:id="@+id/calcularButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Calcular Média" />
+
+        <!-- TextView resultado opcional -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
